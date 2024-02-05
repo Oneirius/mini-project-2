@@ -3,7 +3,7 @@ import './Footer.css';
 function Footer() {
     return(
         <div class="footer">
-            <h2>This is the footer</h2>
+            <a href='https://github.com/Oneirius/mini-project-2'>Github Repository</a>
         </div>
     )
 }
