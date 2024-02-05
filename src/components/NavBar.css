@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #888;
+    border: 1px solid red;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+
+.logoCito {
+    width: 100px;
+}
