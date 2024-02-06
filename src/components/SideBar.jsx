@@ -2,7 +2,7 @@ import './SideBar.css';
 
 function SideBar() {
     return(
-        <div class="sidebar">
+        <div className="sidebar">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>

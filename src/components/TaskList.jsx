@@ -1,13 +1,20 @@
-import dataBase from "../kanban.json";
+import DataBase from "../kanban.json";
 
 function TaskList() {
     return(
         <div>
+            <h1>Task list</h1>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                {
+                DataBase.map((DataBase)=>{
+                    console.log(DataBase.title)
+                    return <li key={DataBase.id}>
+                            {DataBase.title}{DataBase.status === "Done" ? "✅" : "❌"}
+                            </li>
+                    
+                })
+                }
+                </ul>
         </div>
     )
 }

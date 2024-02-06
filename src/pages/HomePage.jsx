@@ -1,6 +1,8 @@
 import NavBar from "../components/NavBar";
+import TaskList from "../components/TaskList";
 import SideBar from "../components/SideBar";
 import Footer from "../components/Footer";
+
 
 import './HomePage.css';
 
@@ -11,6 +13,7 @@ function HomePage() {
             <div className="container">
             <NavBar/>
             <SideBar/>
+            <TaskList/>
             <Footer/>
             </div>
         </div>
