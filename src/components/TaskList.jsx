@@ -1,20 +1,13 @@
-import DataBase from "../kanban.json";
+import List from "./List"
+// import { useState } from "react";
 
 function TaskList() {
+//     const [showTask, setShowTask] = useState(false)
+
     return(
         <div>
             <h1>Task list</h1>
-            <ul>
-                {
-                DataBase.map((DataBase)=>{
-                    console.log(DataBase.title)
-                    return <li key={DataBase.id}>
-                            {DataBase.title}{DataBase.status === "Done" ? "✅" : "❌"}
-                            </li>
-                    
-                })
-                }
-                </ul>
+            <List/>
         </div>
     )
 }
