@@ -4,10 +4,12 @@ function TaskList() {
     return(
         <div>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                {
+                dataBase.map((database)=>{
+                    return <li key={dabase.id}>{dataBase.title}</li>
+                })
+                }
+                </ul>
         </div>
     )
 }
