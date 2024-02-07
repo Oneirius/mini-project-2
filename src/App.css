@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+    border: 1px solid red;
+    height: 90vh;
+}
+
+.page-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80vw;
+    height:80vh;
+    border: 1px solid red;
+    top: 75px;
+    left: 20vw;
+    padding-left: 10px;
+}
+
+.page-content * {
+    list-style: none;
+}
+
+.page {
+    position: relative;
+    
+}

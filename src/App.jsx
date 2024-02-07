@@ -21,13 +21,14 @@ function App() {
           <SideBar />
           <Footer />
         </div>
-      <Routes>
-        {/*<Route path="/" element={<HomePage />} />*/}
-        <Route path="/" element={<DashboardPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/itemdetails" element={<ItemDetailsPage />} />
-        <Route path="/notfound" element={<NotFoundPage />} />
-      </Routes>
+        <div className="page-content">
+          <Routes>  
+            <Route path="/" element={<DashboardPage className="page"/>} />
+            <Route path="/about" element={<AboutPage className="page"/>} />
+            <Route path="/itemdetails" element={<ItemDetailsPage className="page"/>} />
+            <Route path="/notfound" element={<NotFoundPage className="page"/>} />
+          </Routes>
+        </div>
     </div>
   );
 }

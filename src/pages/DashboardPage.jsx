@@ -1,9 +1,13 @@
+import TaskList from "../components/TaskList.jsx"
+
 function DashboardPage() {
     return(
         <>
-            <h1>Dashboard Page</h1>
-            <TaskList/>
-        </>
+            <div>
+                <TaskList/>
+                <h2>Dashboard Page</h2>
+            </div>
+        </> 
     )
 }
 export default DashboardPage;
