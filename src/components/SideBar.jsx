@@ -4,8 +4,9 @@ function SideBar() {
     return(
         <div className="sidebar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li>Home</li>
+                <li>About</li>
+                <li>ItemDetails</li>
             </ul>
         </div>
     )
