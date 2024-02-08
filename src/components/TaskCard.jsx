@@ -1,11 +1,9 @@
 
-function TaskCard({task}) {
-    const {id, title, description, assignee, status,  priority, createdDate, dueDate} = task;
-    console.log(task)
- 
+function TaskCard(props) {
+    const {id, title, description, assignee, status,  priority, createdDate, dueDate} = props.task;
     
     return(
-        <li className="task-card" key={task.id}>
+        <li className="task-card" key={id}>
             <p>{id}</p>
             <p>{title}</p>
             <p>{description}</p>
