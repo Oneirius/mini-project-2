@@ -10,6 +10,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import ItemDetailsPage from "./pages/ItemDetailsPage.jsx";
+import EditPage from "./pages/EditPage.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/about" element={<AboutPage className="page"/>} />
             <Route path="/itemdetails" element={<ItemDetailsPage className="page"/>} />
             <Route path="/notfound" element={<NotFoundPage className="page"/>} />
+            <Route path="edit/:id" element={<EditPage/>} />
           </Routes>
         </div>
         <Footer />

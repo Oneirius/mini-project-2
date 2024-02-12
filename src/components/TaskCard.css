@@ -1,0 +1,26 @@
+.task-card {
+    width: 300px;
+    background-color: rgb(235, 235, 213);
+    border-radius: 25px;
+}
+
+#card-header{
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #05a;
+    color:#fff;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 25px;
+}
+
+#card-description {
+    background-color: #fff;
+    padding: 10px
+}
+
+#card-data {
+    transform: translateX(25%);
+    padding: 10px;
+}
