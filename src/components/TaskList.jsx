@@ -5,7 +5,7 @@ function TaskList(props) { // Need to have props here to inherit the database fr
 const database = props.database // store the inherited json data in a variables
 
     return(
-        <div>
+        <div id="task-container">
             <h2>Task list</h2>
             <List database={database}/> {/*pass database prop to chiold*/}
         </div>

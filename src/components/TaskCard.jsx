@@ -14,6 +14,7 @@ function TaskCard(props) {
             <p>{dueDate}</p>
             {status === "Done" ? "✅" : "❌"}
             <button onClick={()=>{props.deleteTask(id)}}>🗑️</button>
+            
         </li>
     )
 }
