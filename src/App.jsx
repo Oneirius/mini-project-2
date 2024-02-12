@@ -18,10 +18,9 @@ function App() {
     <div className="container">
         <div>
           <NavBar />
-          <SideBar />
-          <Footer />
         </div>
         <div className="page-content">
+          <SideBar /> 
           <Routes>  
             <Route path="/" element={<DashboardPage className="page"/>} />
             <Route path="/about" element={<AboutPage className="page"/>} />
@@ -29,6 +28,7 @@ function App() {
             <Route path="/notfound" element={<NotFoundPage className="page"/>} />
           </Routes>
         </div>
+        <Footer />
     </div>
   );
 }

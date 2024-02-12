@@ -1,6 +1,7 @@
 // import DataBase from "../kanban.json";
 import { useState } from "react";
 import TaskCard from "./TaskCard.jsx";
+import "./List.css"
 
 function List(props) {
     const database = props.database

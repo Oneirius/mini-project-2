@@ -5,8 +5,16 @@
     justify-content: start;
     gap: 20px;
     align-items: center;
+    min-height: 10vh;
+    max-height: 10vh;
+}
+
+.navbar img{
+    max-width: 10vw;
+    background-color: #fff;
+    background-size:cover;
 }
 
 .logoCito {
-    width: 100px;
+    height: 100%;
 }

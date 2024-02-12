@@ -1,4 +1,11 @@
 .footer {
+    position: absolute;
     border: 1px solid red;
     background-color: #888;
+    min-height: 5vh;
+    width: 100vw;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
