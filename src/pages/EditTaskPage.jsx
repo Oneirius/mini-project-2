@@ -1,7 +1,8 @@
 function EditPage() {
     return(
-        <>
-        </>
+        <div>
+            <p>Bananne</p>
+        </div>
     )
 }
 

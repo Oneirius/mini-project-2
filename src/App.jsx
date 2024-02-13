@@ -10,7 +10,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import ItemDetailsPage from "./pages/ItemDetailsPage.jsx";
-import EditPage from "./pages/EditPage.jsx";
+import EditTaskPage from "./pages/EditTaskPage.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -26,8 +26,8 @@ function App() {
             <Route path="/" element={<DashboardPage className="page"/>} />
             <Route path="/about" element={<AboutPage className="page"/>} />
             <Route path="/details/:id" element={<ItemDetailsPage className="page"/>} />
-            <Route path="/edit/:id" element={<EditPage/>} />
-            <Route path="/notfound" element={<NotFoundPage className="page"/>} />
+            <Route path="/edit/:id" element={<EditTaskPage/>} />
+            <Route path="*" element={<NotFoundPage className="page"/>} />
           </Routes>
         </div>
         <Footer />

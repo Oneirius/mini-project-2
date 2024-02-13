@@ -41,7 +41,7 @@ function TaskForm(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <h3>Create new Task</h3>
       <div>
         <label>
