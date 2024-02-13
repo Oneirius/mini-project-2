@@ -11,13 +11,17 @@ function TaskCard(props) {
             <div id="card-data">
                 <p>{assignee}   {priority}   {status === "Done" ? "✅" : "❌"}</p>
                 <p>{createdDate} // {dueDate}</p>
-                
-                <button onClick={()=>{props.deleteTask(id)}}>🗑️</button>
-                <Link><button>✏️</button>
+                <Link to={`/details/${id}`}>
+                    <button>🔎</button>
                 </Link>
+                <Link to={`/edit/${id}`}>
+                    <button>✏️</button>
+                </Link>
+                <button onClick={()=>{props.deleteTask(id)}}>🗑️</button>
             </div>
         </li>
     )
 }
 
 export default TaskCard;
+
