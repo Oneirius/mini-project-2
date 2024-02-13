@@ -9,8 +9,10 @@ function TaskCard(props) {
             <p id="card-header">{id} {title}</p>
             <p id="card-description">{description}</p>
             <div id="card-data">
-                <p>{assignee}   {priority}   {status === "Done" ? "✅" : "❌"}</p>
-                <p>{createdDate} // {dueDate}</p>
+                <p>Assigned: {assignee} - Priority: {priority} </p>  
+                <p>Created: {createdDate}  Due Date: {dueDate}</p>
+            </div>
+            <div id="card-button-row">
                 <Link to={`/details/${id}`}>
                     <button>🔎</button>
                 </Link>
@@ -18,6 +20,8 @@ function TaskCard(props) {
                     <button>✏️</button>
                 </Link>
                 <button onClick={()=>{props.deleteTask(id)}}>🗑️</button>
+                <span>{status === "Done" ? "✅" : "❌"}</span>
+                
             </div>
         </li>
     )

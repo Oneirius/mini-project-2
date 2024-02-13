@@ -2,3 +2,7 @@
     height: 85vh;
     overflow-y: scroll;
 }
+
+#dash-header {
+    text-align: center;
+}

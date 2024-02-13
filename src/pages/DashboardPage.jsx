@@ -9,7 +9,7 @@ const [database, setDatabase]=useState(DataBase);
     return(
         <>
             <div id="dashboard">
-                <h2>Dashboard Page</h2>
+                <h2 id="dash-header">Dashboard Page</h2>
                 <TaskForm database={database} setDatabase={setDatabase}/>
                 <TaskList database={database}/>
             </div>
