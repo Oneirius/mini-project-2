@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./TaskForm.css"
 
 function TaskForm(props) {
   const [id, setId] = useState("");
@@ -45,7 +46,7 @@ function TaskForm(props) {
       <h3>Create new Task</h3>
       <div>
         <label>
-          Task ID
+          ID
           <input
             value={id}
             name="taskID"
@@ -69,7 +70,7 @@ function TaskForm(props) {
           ></input>
         </label>
         <label>
-          Task Description
+          Description
           <input
             value={description}
             name="taskDescription"
@@ -80,8 +81,9 @@ function TaskForm(props) {
             }}
           ></input>
         </label>
+        <br />
         <label>
-          Assigned to
+          Assignee
           <input
             value={assignee}
             name="taskAssignee"
@@ -126,6 +128,7 @@ function TaskForm(props) {
             <option value="Low">Low</option>
           </select>
         </label>
+        <br />
         <label>
           Created
           <input

@@ -1,8 +1,13 @@
 #dashboard{
+    position: absolute;
+    left: 10vw;
+    width: 90vw;
     height: 85vh;
     overflow-y: scroll;
+    border: 1px solid red;
+
 }
 
 #dash-header {
-    text-align: center;
+    /* text-align: center; */
 }

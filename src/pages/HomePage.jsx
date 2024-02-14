@@ -1,10 +1,3 @@
-
-import TaskList from "../components/TaskList";
-
-import DataDisplay from "../components/DataDisplay";
-
-
-
 import './HomePage.css';
 
 function HomePage() {

@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import {useState, useEffect} from "react";
 
 function ItemDetailsPage() {
-    const [task, setTask]=useState(null)
+
     const taskId = useParams().id; 
     const taskDetails = taskArray.find((task)=> String(task.id === taskId))
     console.log(taskDetails)
